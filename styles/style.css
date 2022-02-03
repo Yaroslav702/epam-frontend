@@ -29,6 +29,10 @@
     text-decoration: none;
 }
 
+.logo {
+    font-size: 1.8em;
+}
+
 .logo, .cart {
     color: #FF7417;
 }
@@ -137,4 +141,34 @@
     color: #fff;
     font-size: 15px;
     line-height: 50px;
+}
+
+
+
+@media (max-width: 1400px) {
+    .item {
+        width: 33%;
+    }
+}
+
+@media  (max-width: 974px) {
+    .item {
+        width: 50%;
+    }
+
+    
+
+    .page-header {
+        padding: 10px 30px 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .item {
+        width: 100%;
+    }
+    .item-buy__interface {
+        justify-content: space-between;
+        padding: 0 2em;
+    }
 }
