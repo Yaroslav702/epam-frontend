@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: 
+    "a a a a b b"
+    "a a a a b b"
+    "a a a a c d"
+    "a a a a c d"
+    "e e f f h h"
+    "e e g g i i"
+    "j j . . i i"
+    "j j k k k k"
+    "l l l l l l";
+}
+
+.flexbox {
+    grid-area: a;
+    background-color: blueviolet;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flexbox > div {
+    background-color: yellow;
+    width: 249px;
+    height: 350px;
+}
+
+.grid2 {
+    grid-area: b;
+    background-color: cadetblue;
+}
+
+.grid3 {
+    grid-area: c;
+    background-color: aqua;
+}
+
+.grid4 {
+    grid-area: d;
+    background-color: blue;
+}
+
+.grid5 {
+    grid-area: e;
+    background-color: chocolate;
+}
+
+.grid6 {
+    grid-area: f;
+    background-color: cornflowerblue;
+}
+
+.grid7 {
+    grid-area: g;
+    background-color: darkblue;
+}
+
+.grid8 {
+    grid-area: h;
+    background-color: chartreuse;
+}
+
+.grid9 {
+    grid-area: i;
+    background-color: darkgoldenrod;
+}
+
+.grid10 {
+    grid-area: j;
+    background-color: brown;
+}
+
+.grid11 {
+    grid-area: k;
+    background-color: red;
+}
+
+.grid12 {
+    grid-area: l;
+    background-color: pink;
+}
