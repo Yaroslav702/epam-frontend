@@ -25,7 +25,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <div class="main-section">
             <div class="sorting">
                 <button class="btn btn-sorting"><span>Sort by Product Name</span></button>
                 <button class="btn btn-sorting"><span>Sort by Price</span></button>
@@ -35,15 +35,15 @@
                     <img src="images/product-1.jpg" class="item-photo" alt="#">
                     <h3 class="item-name">Google Pixel 3 XL</h3>
                     <div class="item-buy__interface">
-                        <button class="btn">Add to Cart</button>
-                        <span>$648</span>
+                        <button class="btn btn__buy">Add to Cart</button>
+                        <span class='item_price'>$648</span>
                     </div>
                 </li>
                 <li class="item">
                     <img src="images/product-2.jpg" class="item-photo" alt="#">
                     <h3 class="item-name">Google Pixel 2 XL</h3>
                     <div class="item-buy__interface">
-                        <button class="btn">Add to Cart</button>
+                        <button class="btn btn__buy">Add to Cart</button>
                         <span>$500</span>
                     </div>
                 </li>
@@ -51,7 +51,7 @@
                     <img src="images/product-3.jpg" class="item-photo" alt="#">
                     <h3 class="item-name">Apple iPhone XR</h3>
                     <div class="item-buy__interface">
-                        <button class="btn">Add to Cart</button>
+                        <button class="btn btn__buy">Add to Cart</button>
                         <span>$714</span>
                     </div>
                 </li>
@@ -59,7 +59,7 @@
                     <img src="images/product-4.jpg" class="item-photo" alt="#">
                     <h3 class="item-name">OnePlus 7 Pro</h3>
                     <div class="item-buy__interface">
-                        <button class="btn">Add to Cart</button>
+                        <button class="btn btn__buy">Add to Cart</button>
                         <span>$327</span>
                     </div>
                 </li>
@@ -67,7 +67,7 @@
                     <img src="images/product-5.jpg" class="item-photo" alt="#">
                     <h3 class="item-name">Samsung Galaxy S10 Plus</h3>
                     <div class="item-buy__interface">
-                        <button class="btn">Add to Cart</button>
+                        <button class="btn btn__buy">Add to Cart</button>
                         <span>$1114</span>
                     </div>
                 </li>
@@ -75,7 +75,7 @@
                     <img src="images/product-6.jpg" class="item-photo" alt="#">
                     <h3 class="item-name">Samsung Galaxy Note 9</h3>
                     <div class="item-buy__interface">
-                        <button class="btn">Add to Cart</button>
+                        <button class="btn btn__buy">Add to Cart</button>
                         <span>$170</span>
                     </div>
                 </li>
@@ -83,7 +83,7 @@
                     <img src="images/product-7.jpg" class="item-photo" alt="#">
                     <h3 class="item-name">Dell Alienware 17 R5 VR</h3>
                     <div class="item-buy__interface">
-                        <button class="btn">Add to Cart</button>
+                        <button class="btn btn__buy">Add to Cart</button>
                         <span>$2300</span>
                     </div>
                 </li>
@@ -91,7 +91,7 @@
                     <img src="images/product-8.jpg" class="item-photo" alt="#">
                     <h3 class="item-name">MSI Gaming MSI GT83 8RG-007IN</h3>
                     <div class="item-buy__interface">
-                        <button class="btn">Add to Cart</button>
+                        <button class="btn btn__buy">Add to Cart</button>
                         <span>$5170</span>
                     </div>
                 </li>
@@ -99,7 +99,7 @@
                     <img src="images/product-9.jpg" class="item-photo" alt="#">
                     <h3 class="item-name">CHUWI HeroBool Pro 14.1</h3>
                     <div class="item-buy__interface">
-                        <button class="btn">Add to Cart</button>
+                        <button class="btn btn__buy">Add to Cart</button>
                         <span>$439</span>
                     </div>
                 </li>
@@ -107,7 +107,7 @@
                     <img src="images/product-10.jpg" class="item-photo" alt="#">
                     <h3 class="item-name">Apple MacBool Air</h3>
                     <div class="item-buy__interface">
-                        <button class="btn">Add to Cart</button>
+                        <button class="btn btn__buy">Add to Cart</button>
                         <span>$1150</span>
                     </div>
                 </li>
@@ -115,12 +115,12 @@
                     <img src="images/product-11.jpg" class="item-photo" alt="#">
                     <h3 class="item-name">Asus ROG Zephyrus S17 GX701LWS-HG110T</h3>
                     <div class="item-buy__interface">
-                        <button class="btn">Add to Cart</button>
+                        <button class="btn btn__buy">Add to Cart</button>
                         <span>$3200</span>
                     </div>
                 </li>
             </ul>
-        </main>
+        </div>
         <footer class="page-footer">
             <ul class="footer-menu">
                 <li class="footer-menu__item"><a href="#">Contact us</a></li>
@@ -128,7 +128,15 @@
                 <li class="footer-menu__item copyright">© 2020 Gadget-store</li>
             </ul>
         </footer>
+        <div class="cart-menu disabled">
+            <div class="cart-menu__close"></div>
+            <div class="cart-menu__title">Your Cart</div>
+            <div class="cart-menu__items"></div>
+        </div>
+        <div class="modal"></div>
     </div>
+
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
